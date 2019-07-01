@@ -2,6 +2,8 @@
 
 These notebooks have been created by [Jonathan Chung](https://github.com/jonomon), as part of his internship as Applied Scientist @ Amazon AI, in collaboration with [Thomas Delteil](https://github.com/ThomasDelteil) who built the original prototype.
 
+I have modified few programs for my own requirement of training model for OCR. The dataset was generated using modified version of receipt-scanner by [Yang Zhuohan](https://github.com/billstark) which is available at https://github.com/sandeepkundala/receipt-scanner (modified version). This particular GitHub repo helps to generate random texts including date.
+
 ## Setup
 
 `git clone https://github.com/awslabs/handwritten-text-recognition-for-apache-mxnet --recursive`
