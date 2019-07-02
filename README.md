@@ -1,8 +1,10 @@
-# Handwritten Text Recognition (OCR) with MXNet Gluon 
+# Text Recognition (OCR) with MXNet Gluon 
 
-These notebooks have been created by [Jonathan Chung](https://github.com/jonomon), as part of his internship as Applied Scientist @ Amazon AI, in collaboration with [Thomas Delteil](https://github.com/ThomasDelteil) who built the original prototype.
+These notebooks (except 3a_handwriting_recognition.ipynb and ImgProc.ipynb) have been created by [Jonathan Chung](https://github.com/jonomon), as part of his internship as Applied Scientist @ Amazon AI, in collaboration with [Thomas Delteil](https://github.com/ThomasDelteil) who built the original prototype.
 
-I have modified few programs for my own requirement of training model for OCR. The dataset was generated using modified version of receipt-scanner by [Yang Zhuohan](https://github.com/billstark) which is available at https://github.com/sandeepkundala/receipt-scanner (modified version). This particular GitHub repo helps to generate random texts including date.
+I have used [this](https://github.com/awslabs/handwritten-text-recognition-for-apache-mxnet.git) repository to train model for my use case which is expense report application. I have trained the model using custom dataset in AWS Amazon DL AMI P2-16 instance with close to 24000 images. Around 6000 images were used for testing.
+
+I have modified few programs for my own requirement of training model for OCR. The dataset was generated using modified version of receipt-scanner by [Yang Zhuohan](https://github.com/billstark) which is available at https://github.com/sandeepkundala/receipt-scanner (modified version). This particular GitHub repo helps to generate random texts including date. Also, this repository helps to create bill receipts which would be used for inference of the OCR Model.
 
 ## Setup
 
@@ -13,7 +15,7 @@ I have modified few programs for my own requirement of training model for OCR. T
 ## To generate your own dataset
 
 In receipt-scanner run draw_receipt.py which is present in ReceiptGenerator folder.
-The command is `python3 draw_receipt.py 100` to generate 100 sample images for each type like 'word', 'word_column', 'word_bracket', 'int', 'float', 'price_left', 'price_right', 'percentage','line', 'date'.
+The command is `python3 draw_receipt.py 100` to generate 100 sample images for each type like 'word', 'word_column', 'word_bracket', 'int', 'float', 'price_left', 'price_right', 'percentage','line', 'date'. The images are saved in results_test folder. The bill receipt images are stored in results folder.
 
 ## Overview 
 
@@ -71,7 +73,5 @@ The greedy, lexicon search, and beam search outputs present similar and reasonab
 
 ![](https://cdn-images-1.medium.com/max/800/1*JTbCUnKgAySN--zJqzqy0Q.png)
 
-##### Results
 
-![](https://cdn-images-1.medium.com/max/2000/1*8lnqqlqomgdGshJB12dW1Q.png)
 
