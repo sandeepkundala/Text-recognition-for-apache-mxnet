@@ -6,33 +6,13 @@ I have modified few programs for my own requirement of training model for OCR. T
 
 ## Setup
 
-`git clone https://github.com/awslabs/handwritten-text-recognition-for-apache-mxnet --recursive`
+`git clone https://github.com/sandeepkundala/handwritten-text-recognition-for-apache-mxnet.git --recursive`
+`git clone https://github.com/sandeepkundala/receipt-scanner.git --recursive`
 
-You need to install SCLITE for WER evaluation
-You can follow the following bash script from this folder:
+## To generate your own dataset
 
-```bash
-cd ..
-git clone https://github.com/usnistgov/SCTK
-cd SCTK
-export CXXFLAGS="-std=c++11" && make config
-make all
-make check
-make install
-make doc
-cd -
-```
-
-You also need hsnwlib
-
-```bash
-pip install pybind11 numpy setuptools
-cd ..
-git clone https://github.com/nmslib/hnswlib
-cd hnswlib/python_bindings
-python setup.py install
-cd ../..
-```
+In receipt-scanner run draw_receipt.py which is present in ReceiptGenerator folder.
+The command is `python3 draw_receipt.py 100` to generate 100 sample images for each type like 'word', 'word_column', 'word_bracket', 'int', 'float', 'price_left', 'price_right', 'percentage','line', 'date'.
 
 ## Overview 
 
