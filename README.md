@@ -15,7 +15,12 @@ I have modified few programs for my own requirement of training model for OCR. T
 ## To generate your own dataset
 
 In receipt-scanner run draw_receipt.py which is present in ReceiptGenerator folder.
-The command is `python3 draw_receipt.py 100` to generate 100 sample images for each type like 'word', 'word_column', 'word_bracket', 'int', 'float', 'price_left', 'price_right', 'percentage','line', 'date'. The images are saved in results_test folder. The bill receipt images are stored in results folder.
+
+The command is `python3 draw_receipt.py 100` 
+
+to generate 100 sample images for each type like 'word', 'word_column', 'word_bracket', 'int', 'float', 'price_left', 'price_right', 'percentage','line', 'date'. 
+
+The images are saved in results_test folder. The bill receipt images are stored in results folder.
 
 ## Overview 
 
