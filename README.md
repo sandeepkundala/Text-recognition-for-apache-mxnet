@@ -7,6 +7,7 @@ I have modified few programs for my own requirement of training model for OCR. T
 ## Setup
 
 `git clone https://github.com/sandeepkundala/handwritten-text-recognition-for-apache-mxnet.git --recursive`
+
 `git clone https://github.com/sandeepkundala/receipt-scanner.git --recursive`
 
 ## To generate your own dataset
